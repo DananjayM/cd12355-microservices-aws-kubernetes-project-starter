@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: coworking
-        image: 608665815834.dkr.ecr.us-east-1.amazonaws.com/dananjay-coworking-project:8
+        image: 608665815834.dkr.ecr.us-east-1.amazonaws.com/dananjay-coworking-project:1
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -53,4 +53,3 @@ spec:
             secretKeyRef:
               name: secret-password
               key: password
-      restartPolicy: Always
