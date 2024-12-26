@@ -4,6 +4,9 @@ WORKDIR /src
 
 COPY ./app/requirements.txt requirements.txt
 
+ENV DB_USERNAME=myuser
+ENV DB_PASSWORD=mypassword
+
 RUN apt update -y
 
 RUN apt install build-essential libpq-dev -y
